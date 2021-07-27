@@ -5,11 +5,6 @@ let lastTarget;
 let str = "+-*/%";
 let str2 = "+-*/%x²√=";
 let str3 = "374243454713";
-let body = document.getElementsByTagName("body");
-console.log(screen.height);
-body.forEach(i => {
-    i.style.height = (screen.height + "px");
-});
 
 // what will happen when we press enter
 display.addEventListener("keypress", keyPressEvent, false);
@@ -82,7 +77,6 @@ function clickEvent(event) {
         lastTarget = btnText;
     }
     else {
-        // console.log("btn =", btnText);
         displayValue += btnText
         display.value = displayValue;
         lastTarget = btnText;
